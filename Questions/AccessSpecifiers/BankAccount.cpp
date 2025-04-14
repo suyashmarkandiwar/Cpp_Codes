@@ -43,7 +43,6 @@ class BankAccount{
         cout<<"Balance: $"<<Balance<<endl;
     }
 
-    
 };
 
 int main(){
