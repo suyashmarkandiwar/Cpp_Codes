@@ -17,6 +17,7 @@ public:
 int main(){
     Print p1;
     p1.show(100336699);
+    p1.show('A');
 
 
     return 0;

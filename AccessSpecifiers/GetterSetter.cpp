@@ -5,8 +5,8 @@ class Circle{
     double radius;
 
     public:
-    double getter(){
-        return radius;
+    double getter(){     //Getter Function
+        return radius;  //This is needed to access the private member
     }
 
     void setter(double val){

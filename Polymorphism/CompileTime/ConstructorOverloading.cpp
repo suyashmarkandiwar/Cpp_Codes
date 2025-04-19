@@ -11,6 +11,7 @@ class Student{
 
     Student(string name){
         this->name=name;
+        cout<<name<<endl;
         cout<<"parameterized\n";
     }
 
@@ -21,5 +22,6 @@ class Student{
 
 int main(){
     Student s1("tommy");
+    Student s2;
     return 0;
 }
