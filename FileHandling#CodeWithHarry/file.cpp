@@ -16,16 +16,16 @@ a file:
 */
 using namespace std;
 int main(){
-    string st = "Luffy and Zoro";
+    string st = "Luffy and Zoro are Straw Hat Pirates";
     string st2;
     //opening files using constructor and writing it
-    //ofstream out("Tom.txt");//Write operation
-    //out<<st;
+    ofstream out("Tom.txt");//Write operation
+    out<<st;
     
     //opening files using constructor and reading it
-    ifstream in("Tom2.txt"); //Reading operation
-    getline(in, st2);
-    cout<<st2<<endl;
+    // ifstream in("Tom2.txt"); //Reading operation
+    // getline(in, st2);
+    // cout<<st2<<endl;
 
     return 0;
 }
