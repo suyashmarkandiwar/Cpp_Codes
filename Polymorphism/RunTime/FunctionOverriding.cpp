@@ -2,7 +2,7 @@
 using namespace std;
 class Parent{
 public: 
-    void getInfo(){
+    virtual void getInfo(){
         cout<<"parent class\n";
     }
 
@@ -10,14 +10,16 @@ public:
 
 class Child : public Parent {
     public:
-    void getInfo(){
+    void getInfo() override{
         cout<<"child class\n";
     }
 };
 
 int main(){
-    Parent c1;
-    c1.getInfo();
+    Parent *c1;
+    Child c2;
+    c1=&c2;
+    c1->getInfo();
 
     return 0;
 }
