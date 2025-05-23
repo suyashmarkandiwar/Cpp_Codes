@@ -18,7 +18,7 @@ class access{
 
 class F{
     public:
-    void display(access& t){
+    void display(const access& t){
         cout<<t.pri<<endl;
         cout<<t.pro<<endl;
     }
