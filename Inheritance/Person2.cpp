@@ -22,12 +22,16 @@ public:
 
 };
 
-class Student : private Person{
+class Student : private Person{ //Inherits from Person, but Person's members become private in Student
     
 public:
     int rollno;
 
-    Student(string name, int age, int rollno) : Person(name, age){
+    Student(string name, int age, int rollno) : Person(name, age){  
+        //: Person(name, age)
+        // This is the constructor initializer list, which is:
+        // Calling the Person constructor with name and age.
+        // It's necessary because Person has a parameterized constructor and no default one.
     this-> rollno = rollno;
     }
     void getInfo(){
@@ -45,7 +49,6 @@ public:
     };
 int main(){
     Student s1("rahul",21,1234);
-    
     
     s1.getInfo();
     cout<<s1.name;
