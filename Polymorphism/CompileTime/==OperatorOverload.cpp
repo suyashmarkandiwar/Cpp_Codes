@@ -13,8 +13,6 @@ class Compare{
         return (a == p.a && b == p.b);
     }
 
-
-
 };
 
 int main(){

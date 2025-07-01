@@ -12,7 +12,7 @@ int main(){
     cout<<"Before Swap"<<endl;
     cout<<"a: "<<a<<" "<<"b: "<<b<<endl;
 
-    swap(&a, &b);
+    swap(a, b);
     cout<<"After Swap"<<endl;
     cout<<"a: "<<a<<" "<<"b: "<<b<<endl;
 

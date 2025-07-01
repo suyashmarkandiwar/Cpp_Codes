@@ -16,9 +16,9 @@ class A{
         return imag;
     }
 
-    A operator+(const A & obj){
-        return A(real + obj.real, imag + obj.imag);
-    }
+    A operator+(const A & obj){ //Overloads + to work with A objects
+        return A(real + obj.real, imag + obj.imag); //Returns a new object created by constructor
+    }   //Because you’re returning an object, not a number
 
 };
 

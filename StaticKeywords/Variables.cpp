@@ -12,3 +12,8 @@ int main(){
     fun();
     return 0;
 }
+
+// What does static int x = 0; do?
+// x is initialized only once — during the first call to fun().
+// Its value is retained between function calls.
+// It's not re-initialized to 0 every time like a normal local variable.
