@@ -34,7 +34,7 @@ void unique(string str, int k){
          
         if(t == k){
            
-                cout << "First letter to repeat " << k << " times: " << str1[i] << endl;
+            cout << "First letter to repeat " << k << " times: " << str1[i] << endl;
             // char c = str1[i];
             // cout << c << endl;
         }
